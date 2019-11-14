@@ -32,6 +32,7 @@ class Map:
         self.mapData[7][6] = TileType.CAT
 
         #init
+        self.mapData[7][5] = TileType.CHEESE #extra cheese for less RNG
         self.mapData[7][7] = TileType.CHEESE
 
     def draw(self, mousepos):

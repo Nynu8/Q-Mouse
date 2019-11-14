@@ -39,7 +39,7 @@ class MouseGame:
             reward -= 1000
             self.reset()
         if tile == TileType.CHEESE:
-            reward += 10000
+            reward += 100000
             print("Found cheese")
             self.reset()
 

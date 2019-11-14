@@ -3,7 +3,7 @@ import random
 
 class Gambler:
     def __init__(self, learning_rate=0.1, discount=0.95, exploration_rate=1.0, iterations=10000):
-        self.q_table = [[[0]*4]*8]*8
+        self.q_table = [[[0,0,0,0] for x in range(8)] for y in range(8)]
         self.learning_rate = learning_rate # How much we appreciate new q-value over current
         self.discount = discount # How much we appreciate future reward over current
         self.exploration_rate = 1.0 # Initial exploration rate
